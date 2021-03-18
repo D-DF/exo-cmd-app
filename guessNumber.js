@@ -6,9 +6,11 @@ if(isNaN(numberWin)) {
     console.log(`Ce n'est pas un nombre`)
 }
 
-const reponse = readlineSync.question('Quel est le juste nombre ?')
+let reponse; 
 
 do {
+    reponse = readlineSync.question('Quel est le juste nombre ?')
+    
     if(reponse > numberWin) {
         console.log(chalk.red("Votre chiffre est supérieur"))
     } else if (numberWin > reponse) {
@@ -16,7 +18,6 @@ do {
     } else {
         console.log(chalk.green("Bravo!"));
     }
-} 
-while (reponse === numberWin)
+} while (reponse === numberWin)
 
 
