@@ -6,6 +6,7 @@
   "author": "D-DF <daviddefreitas0192@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "chalk": "^4.1.0",
     "readline-sync": "^1.4.10"
   }
 }
