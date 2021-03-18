@@ -1,19 +1,20 @@
 const nbElement = process.argv[2];
+const number    = Number(nbElement);
 const string    = process.argv[3];
 const reverse   = process.argv[4];
 
-const showStars = (nbElement, str) => {
-    for (let i = 1; i <= nbElement; i += 1) {
+const showStars = (number, str) => {
+    for (let i = 1; i <= number; i += 1) {
       console.log(str.repeat(i));
     }
 
-    if(nbElement !== Number) {
-        console.log(`Error: ${nbElement} is not a number.`);
+    if(isNaN(number)) {
+        console.log(`Error: ${number} is not a number.`);
         process.exit(1);
     }
   }
 
-showStars(nbElement, string);
+showStars(number, string);
 
 
 
