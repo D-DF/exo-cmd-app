@@ -6,6 +6,7 @@ let age       = readlineSync.question('Quel est ton âge ?');
 let pays      = process.argv[2];
 let majorite  = Number(pays);
 
+
 switch(majorite) {
     case 18: 
         if(age >= 18) {
