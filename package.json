@@ -1,0 +1,11 @@
+{
+  "name": "exo-cmd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/D-DF/exo-cmd-app.git",
+  "author": "D-DF <daviddefreitas0192@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
