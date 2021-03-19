@@ -2,7 +2,6 @@ const nbElement = process.argv[2];
 const number    = Number(nbElement);
 const string    = process.argv[3];
 const reverse   = process.argv[4];
-const argvLength = process.argv.length;
 
 if(isNaN(number)) {
   console.log(`Error: ${number} is not a number.`);
