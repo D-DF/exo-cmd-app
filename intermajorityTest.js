@@ -1,5 +1,15 @@
 const readlineSync = require('readline-sync');
 
+if(process.argv.length !== 3) {
+    console.log(`usage: node majorityTest.js age`)
+    process.exit(1)
+}
+
+if(isNaN(process.argv[2])) {
+    console.log(`Error: ${process.argv[2]} is not a number`)
+    proces.exit(1);
+}
+
 let firstName = readlineSync.question('Quel est ton prénom ?');
 let name      = readlineSync.question('Quel est ton nom ?');
 let age       = readlineSync.question('Quel est ton âge ?');
