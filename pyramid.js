@@ -3,6 +3,11 @@ const number    = Number(nbElement);
 const string    = process.argv[3];
 const reverse   = process.argv[4];
 
+if (!(process.argv.length === 5  || process.argv.length === 4)) {
+  console.log(`La commande doit avoir 4 ou 5 arguments`);
+  process.exit(1);
+}
+
 if(isNaN(number)) {
   console.log(`Error: ${number} is not a number.`);
   process.exit(1);
